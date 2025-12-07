@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynamic Content Management System Platform</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- PLATFORM HEADER -->
+<header class="platform-header">
+    <h1>FLOWWRITE S</h1>
+    <p class="tagline">Create, Edit, Manage, and Preview Your Content Seamlessly</p>
+</header>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <aside class="panel left">
+        <div class="toolbar">
+            <h2>Editor</h2>
+            <div class="flex">
+                <button class="btn" id="addTemplate">+ Template</button>
+                <button class="btn ghost" id="clearAll">Clear</button>
+            </div>
+        </div>
+
+        <label>Title</label>
+        <input id="title" type="text" placeholder="Page Title" />
+
+        <label>Block Type</label>
+        <select id="type">
+            <option value="text">Text</option>
+            <option value="image">Image</option>
+            <option value="html">HTML</option>
+            <option value="quote">Quote</option>
+        </select>
+
+        <label>Content</label>
+        <textarea id="content" placeholder="Write your content here…"></textarea>
+
+        <div class="flex" style="margin-top: 10px">
+            <button class="btn" id="addBlock">Add Block</button>
+            <button class="btn ghost" id="updateBlock">Update</button>
+        </div>
+
+        <h2 style="margin-top: 18px;">Content Blocks</h2>
+        <div id="list" class="list"></div>
+    </aside>
+
+    <!-- CENTER PANEL → PREVIEW -->
+    <main class="panel center">
+        <h2>Live Preview</h2>
+        <div class="preview" id="preview">
+            <h1 id="pageTitle">Untitled Page</h1>
+            <div id="contentArea"></div>
+        </div>
+
+        <footer class="small">
+            Dynamic Content Management System — Demo Version
+        </footer>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <aside class="panel right">
+        <h2>Page Settings</h2>
+
+        <label>Theme</label>
+        <select id="themeSelect">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
+
+        <label>Author</label>
+        <input id="author" type="text" placeholder="Author name" />
+
+        <label>Publish Date</label>
+        <input id="pubdate" type="text" placeholder="YYYY-MM-DD" />
+
+        <div class="flex" style="margin-top:10px">
+            <button class="btn" id="previewMode">Open Preview</button>
+            <button class="btn ghost" id="clearLocal">Clear Saved</button>
+        </div>
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa6b2;
+  --accent: #7c5cff;
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #071129, #081223);
+  color: #e6eef6;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  gap: 20px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.04);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  background: #0b1220;
+  border: 1px solid #222a38;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: var(--accent);
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #2c3345;
+}
+
+.list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.card {
+  background: var(--glass);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.preview {
+  padding: 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  min-height: 60vh;
+}
+
+.content-block {
+  background: rgba(255,255,255,0.03);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.content-block img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.platform-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.platform-header h1 {
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.platform-header .tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
