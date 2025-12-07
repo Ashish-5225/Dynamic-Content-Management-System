@@ -33,4 +33,33 @@ The **Dynamic Content Management System Platform** is a browser-based CMS develo
 ---
 
 ## 📁 Project Structure
+/project-folder
+│── index.html
+│── styles.css
+│── script.js
+│── README.md
+
+
+---
+
+## 📌 Purpose of the Project
+This project demonstrates the fundamentals of a CMS such as:
+- dynamic content rendering  
+- modular block-based content creation  
+- real-time preview  
+- UI/UX design  
+- front-end logic handling  
+
+It serves as a simplified educational model of a Content Management System.
+
+---
+
+## 🙌 Author
+Created by: Ashish
+Institution:Galgotias University
+
+---
+
+## 📄 License
+This project is for educational use only.
 
