@@ -33,7 +33,7 @@ The **Dynamic Content Management System Platform** is a browser-based CMS develo
 ---
 
 ## 📁 Project Structure
-/project-folder
+/
 │── index.html
 │── styles.css
 │── script.js
